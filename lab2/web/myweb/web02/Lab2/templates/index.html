@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>2213924_申宗尚的网页</title>
+    <style>
+        /* 设置全局字体和背景 */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        /* 定义主要内容容器的样式 */
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 90%;
+        }
+
+        /* 标题样式 */
+        h1 {
+            font-size: 2em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        /* 信息项样式 */
+        .info p {
+            font-size: 1.1em;
+            color: #34495e;
+            margin: 8px 0;
+        }
+
+        /* 图片样式 */
+        img {
+            border-radius: 50%;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            border: 2px solid #2c3e50;
+        }
+
+        /* 图文标签样式 */
+        .caption {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #34495e;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* 音频控制样式 */
+        audio {
+            margin-top: 10px;
+        }
+
+        .audio-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    </style>
+</head>
+<body>
+    {% load static %}
+    <div class="container">
+        <h1>KKkai的主页</h1>
+        <div class="info">
+            <p><b>姓名：</b>申宗尚</p>
+            <p><b>学号：</b>2213924</p>
+            <p><b>专业：</b>信息安全</p>
+        </div>
+        
+        <img src="{% static 'images/icon.jpg' %}" height="150" width="150" alt="Logo">
+        <div class="caption">我的歌曲：</div>
+        
+        <div class="audio-container">
+            <p style="margin: 0; padding-right: 10px;"><b>✨ sink2003 ✨:</b></p> <!-- 歌曲名字 -->
+            <audio controls="controls">
+                <source src="{% static 'audio/sink2003.mp3' %}" type="audio/mp3">
+            </audio>
+        </div>
+
+        <div class="audio-container">
+            <p style="margin: 0; padding-right: 10px;"><b>❄️ 易碎品 ❄️:</b></p> <!-- 歌曲名字 -->
+            <audio controls="controls">
+                <source src="{% static 'audio/易碎品.mp3' %}" type="audio/mp3">
+            </audio>
+        </div>
+
+        <div class="audio-container">
+            <p style="margin: 0; padding-right: 10px;"><b>🩸南开cypher🩸:</b></p> <!-- 歌曲名字 -->
+            <audio controls="controls">
+                <source src="{% static 'audio/南开cypher.mp3' %}" type="audio/mp3">
+            </audio>
+        </div>
+
+        <p style="text-align: center; margin-top: 15px;">
+            <a href="https://music.163.com/#/artist?id=46630775" target="_blank" style="text-decoration: none; color: #aadafa; font-weight: bold;">
+                👉点我进入网易云主页
+            </a>
+        </p>
+
+    </div>
+</body>
+</html>
